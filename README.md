@@ -228,8 +228,8 @@ Enter the query :
 <details>
 <summary>Token</summary>
 
-`token <address> (dump)`
-gets the info of a token. Can dump the NFT content
+`token <address> (dump, full)`
+gets the info of a token. Can dump the NFT content or collection
 
 Example :
 ```
@@ -248,6 +248,37 @@ Proprties :
 Type : image/jpeg
 Filename ? > (Default : BUZZ_0000F9535C5C80385DEDC96F71FB62C7289D36AA1F934B858CACC8FF0507CBA4F9B8.jpeg)
 Saved to BUZZ_0000F9535C5C80385DEDC96F71FB62C7289D36AA1F934B858CACC8FF0507CBA4F9B8.jpeg
+
+> token 0000260d70b23efc72ce7be2a7da00a0e2eeaa6b39bd3b6e39e5a6bc600303177ef6
+Key0 ($K0) id : 3E96EB84C9CBDF3D22650DF9FB180D517B2878E79598F6C76EE11D557E1BCB08
+Supply : 676500000000 (Decimals : 8)
+Type : non-fungible
+Genesis : 0000BD9C0BDB14E49B96756F4FC3EFD9652F83FAE4ADE725A2A516B3D0543B071AB9
+Proprties :
+        description : Key0 Avatars are the first fully minted collection...
+        type_mime : image/png
+6765 collection elements :
+{
+    "attributes": [
+        {
+            "trait_type": "Rarity",
+            "value": "Genesis"
+        }
+    ],
+    "content": {
+        "ipfs": "ipfs://bafybeife6c6eve42presilbj2roi5tphpf7aaf4j6lqyipt2rybhcet2f4/1-Rare.png"
+    },
+    "name": "Genesis Key 1"
+}
+[...]
+
+> token 0000260d70b23efc72ce7be2a7da00a0e2eeaa6b39bd3b6e39e5a6bc600303177ef6 dump
+Found collection of 6765 elements
+Type : image/png
+Saved 1/6765 : Key0_0000260d70b23efc72ce7be2a7da00a0e2eeaa6b39bd3b6e39e5a6bc600303177ef6/0_Genesis_Key_1.png
+Saved 2/6765 : Key0_0000260d70b23efc72ce7be2a7da00a0e2eeaa6b39bd3b6e39e5a6bc600303177ef6/1_Genesis_Key_2.png
+Saved 3/6765 : Key0_0000260d70b23efc72ce7be2a7da00a0e2eeaa6b39bd3b6e39e5a6bc600303177ef6/2_Genesis_Key_3.png
+[...]
 ```
 </details>
 

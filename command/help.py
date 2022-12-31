@@ -16,7 +16,7 @@ class Help(Command):
         - nodes : list all the nodes registered in the network
         - oracle (timestamp) : gets oracle price
         - query (query) : custom graphql query. Multiline input if no query is provided
-        - token <address> (dump) : gets the info of a token. Can dump the NFT content
+        - token <address> (dump, full) : gets the info of a token. Can dump the NFT content or collection
         - transaction <address> (raw) : gets the info of a transaction
         - transactions (page) : query the network to find all the transactions locally stored
         - type <type> (page) : query the network to list the transaction on the type

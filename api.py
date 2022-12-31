@@ -23,7 +23,7 @@ def getBalance(address):
         }
     """ % address)["data"]["balance"]
 
-def getToken(address, vars = "decimals, genesis, id, name, properties, supply, symbol, type"):
+def getToken(address, vars = "decimals, genesis, id, name, properties, supply, symbol, type, collection"):
     return con.executeQuery("""
         query {
             token(address: "%s") {
